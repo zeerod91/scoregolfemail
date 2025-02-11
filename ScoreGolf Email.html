@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=640, initial-scale=1.0">
+  <title>Algonquin Resort Stay and Play Golf Package</title>
+  <style type="text/css">
+    /* Custom Font Integration */
+    @font-face {
+      font-family: 'AlgonquinFont';
+      src: url('https://innvestreit-my.sharepoint.com/:f:/g/personal/zach_rodrigue_algonquinresort_com/Eo3GlWJ0jxFErQlk71wld4wBCGUnKUrWp5ZFXPxmQyYcdg/ApprovedFont-Regular.woff2') format('woff2'),
+           url('https://innvestreit-my.sharepoint.com/:f:/g/personal/zach_rodrigue_algonquinresort_com/Eo3GlWJ0jxFErQlk71wld4wBCGUnKUrWp5ZFXPxmQyYcdg/ApprovedFont-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'AlgonquinFont';
+      src: url('https://innvestreit-my.sharepoint.com/:f:/g/personal/zach_rodrigue_algonquinresort_com/Eo3GlWJ0jxFErQlk71wld4wBCGUnKUrWp5ZFXPxmQyYcdg/ApprovedFont-Bold.woff2') format('woff2'),
+           url('https://innvestreit-my.sharepoint.com/:f:/g/personal/zach_rodrigue_algonquinresort_com/Eo3GlWJ0jxFErQlk71wld4wBCGUnKUrWp5ZFXPxmQyYcdg/ApprovedFont-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'AlgonquinFont';
+      src: url('https://innvestreit-my.sharepoint.com/:f:/g/personal/zach_rodrigue_algonquinresort_com/Eo3GlWJ0jxFErQlk71wld4wBCGUnKUrWp5ZFXPxmQyYcdg/ApprovedFont-Italic.woff2') format('woff2'),
+           url('https://innvestreit-my.sharepoint.com/:f:/g/personal/zach_rodrigue_algonquinresort_com/Eo3GlWJ0jxFErQlk71wld4wBCGUnKUrWp5ZFXPxmQyYcdg/ApprovedFont-Italic.woff') format('woff');
+      font-weight: 400;
+      font-style: italic;
+    }
+    /* Reset & Basic Styling */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; background-color: #EEECE4; font-family: 'AlgonquinFont', Arial, sans-serif; }
+    .container { width: 640px; max-width: 640px; margin: 0 auto; }
+    .header { background-color: #0B496A; padding: 20px; text-align: center; }
+    .header img { max-width: 200px; height: auto; display: block; margin: 0 auto; }
+    .content { background-color: #ffffff; padding: 20px; }
+    h1 { color: #0B496A; font-size: 26px; margin-bottom: 10px; }
+    h2 { color: #0B496A; font-size: 22px; margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.5; color: #333333; margin: 10px 0; }
+    .button {
+      background-color: #0B496A;
+      color: #ffffff;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    /* Gallery Styling for Early Bird Section */
+    .gallery { width: 100%; margin-top: 20px; }
+    .gallery-row { display: flex; }
+    .gallery-row img { width: 50%; display: block; }
+    .gallery-row img:first-child { padding-right: 5px; }
+    .gallery-row img:last-child { padding-left: 5px; }
+    /* Virtual Tour Section with New Overlay */
+    .virtual-tour { position: relative; margin: 20px 0; }
+    .virtual-tour img { width: 100%; display: block; }
+    .virtual-tour .overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .virtual-tour .overlay a {
+      color: #0B496A;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    /* Achievements Section Redesign */
+    .achievements {
+      background-color: #DDAA43; /* Approved gold color */
+      padding: 30px;
+      text-align: center;
+      color: #0B496A; /* Primary blue for text */
+      margin-top: 20px;
+    }
+    .achievements h2 { font-size: 24px; margin-bottom: 10px; }
+    .achievements p { font-size: 16px; margin: 5px 0; }
+    /* Plan Your Trip Section with Improved Image Grid */
+    .plan-trip {
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin-top: 20px;
+    }
+    .plan-trip h2 { color: #0B496A; font-size: 24px; margin-bottom: 10px; }
+    .plan-trip p { font-size: 16px; margin-bottom: 20px; }
+    .trip-gallery {
+      width: 100%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    .trip-gallery td {
+      padding: 5px;
+    }
+    .trip-gallery img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    /* Footer Styling */
+    .footer {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #666666;
+    }
+    .footer img.monogram { 
+      max-width: 120px; 
+      display: block; 
+      margin: 0 auto; 
+    }
+    .footer .social-icons { margin-top: 10px; }
+    .footer .social-icons img { margin: 0 5px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" style="padding: 20px 0;">
+        <table class="container" border="0" cellpadding="0" cellspacing="0">
+          <!-- Header -->
+          <tr>
+            <td class="header">
+              <!-- Full Logo (White on Black) -->
+              <img src="https://i.imgur.com/v0hUXyS.png" alt="Algonquin Resort Logo">
+            </td>
+          </tr>
+          <!-- Hero Image (Large) -->
+          <tr>
+            <td>
+              <img src="https://i.imgur.com/kLrZwkE.jpg" alt="Algonquin Resort Hotel" width="640" style="display: block;">
+            </td>
+          </tr>
+          <!-- Main Content -->
+          <tr>
+            <td class="content">
+              <h1>Algonquin Resort Stay and Play Golf Package</h1>
+              <p>Experience elegance and leisure with our exclusive package designed for the discerning golfer. Enjoy premium accommodations, unlimited golf, and exceptional amenities.</p>
+              
+              <!-- Early Bird Section -->
+              <div class="package-section">
+                <h2>Early Bird Stay and Play Special</h2>
+                <p>Book by <strong>March 16, 2025</strong> to take advantage of our special Early Bird pricing. This exclusive offer includes:</p>
+                <ul style="font-size: 16px; color: #333333; margin-left: 20px;">
+                  <li>Unlimited golf on the day of play</li>
+                  <li>Elegant accommodations</li>
+                  <li>Golf with cart</li>
+                  <li>F&amp;B credit of $25 (single occupancy) or $50 (double occupancy)</li>
+                </ul>
+                <p>Available during spring (May &amp; June) and fall (last 2 weeks of September and all of October).</p>
+                <a href="https://www.marriott.com/reservation/availability.mi?propertyCode=YSJAK&cc=GOF" class="button">Book Early Bird Now</a>
+              </div>
+              
+              <!-- Gallery Set 1: Near Early Bird Section -->
+              <div class="gallery">
+                <div class="gallery-row">
+                  <img src="https://i.imgur.com/hS84Cl3.jpg" alt="Patio at the Golf Course">
+                  <img src="https://i.imgur.com/Sx4wq99.jpg" alt="13th Hole on Water’s Edge">
+                </div>
+              </div>
+              
+              <!-- Virtual Tour Section with New Overlay -->
+              <div class="virtual-tour">
+                <img src="https://i.imgur.com/hWR66y8.jpg" alt="Virtual Golf Course Background">
+                <div class="overlay">
+                  <a href="https://zeerod91.github.io/Virtual-Golf-Course-Tour-/" target="_blank">
+                    Click here to explore our golf course virtually using our interactive digital twin!
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Standard Stay and Play Section -->
+              <div class="package-section">
+                <h2>Stay and Play Package</h2>
+                <p>Immerse yourself in the complete resort experience with our signature Stay and Play offering. Enjoy everything our resort has to offer, both on and off the course.</p>
+                <a href="https://www.algonquinresort.com/packages/stay-and-play" class="button">Learn More</a>
+              </div>
+              
+              <!-- Achievements Section Redesigned -->
+              <div class="achievements">
+                <h2>Our Achievements</h2>
+                <p>2024: Ranked #45 in ScoreGolf’s Top 100</p>
+                <p>2023: Ranked #20 in ScoreGolf’s Top 59 Public Courses</p>
+                <p>See full rankings on <a href="https://scoregolf.com/golf-course-ranking/top-100-golf-courses-in-canada/the-2024-top-100/" target="_blank" style="color: #0B496A; text-decoration: underline;">ScoreGolf</a></p>
+              </div>
+              
+              <!-- Plan Your Trip Section with Improved Image Grid -->
+              <div class="plan-trip">
+                <h2>Plan Your Trip to Saint Andrews</h2>
+                <p>Discover the charm of Saint Andrews – whether you’re here for world-class golf or a leisurely escape, your unforgettable getaway awaits.</p>
+                <table class="trip-gallery">
+                  <tr>
+                    <td><img src="https://i.imgur.com/dQDVwZT.jpg" alt="Plan Your Trip Image 1"></td>
+                    <td><img src="https://i.imgur.com/K4CKeQs.jpg" alt="Plan Your Trip Image 2"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://i.imgur.com/wRJy0uj.jpg" alt="Plan Your Trip Image 3"></td>
+                    <td><img src="https://i.imgur.com/fO7NhCO.jpg" alt="Plan Your Trip Image 4"></td>
+                  </tr>
+                </table>
+                <a href="https://explorestandrews.ca/" class="button" style="margin-top: 20px;">Plan Your Trip Now</a>
+              </div>
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td class="footer">
+              <!-- Enlarged Monogram Logo (Black on White) -->
+              <img src="https://i.imgur.com/7E9Nl3u.png" alt="Algonquin Resort Monogram" class="monogram">
+              <!-- Social Media Icons directly below the monogram -->
+              <div class="social-icons">
+                <a href="https://www.facebook.com/AlgonquinStAndrews/" target="_blank">
+                  <img src="https://img.icons8.com/ios-filled/24/0B496A/facebook-new.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/algonquinstandrews/" target="_blank">
+                  <img src="https://img.icons8.com/ios-filled/24/0B496A/instagram-new.png" alt="Instagram">
+                </a>
+              </div>
+              <p><strong>Algonquin Resort</strong></p>
+              <p>Hotel: 184 Adolphus Street, Saint Andrews, NB, E5B 1T7</p>
+              <p>Golf Course: 465 Brandy Cove Road, Saint Andrews, NB, E5B 2L6</p>
+              <p>Website: <a href="https://www.algonquinresort.com" target="_blank">www.algonquinresort.com</a></p>
+              <p>Phone: 1-855-529-8693</p>
+              <p style="margin-top: 15px;">Please note: Cannot be combined with other promotions. Blackout dates apply. Reservations required. Ongoing renovations include 100 rooms being upgraded (ready by June) and limited room availability.</p>
+              <p>© 2025 Algonquin Resort. All rights reserved.</p>
+            </td>
+          </tr>
+          
+          <!-- Bottom Big Image: New Hotel Image -->
+          <tr>
+            <td>
+              <img src="https://i.imgur.com/zfpJCnf.jpg" alt="Algonquin Resort Exterior" width="640" style="display: block; margin-top: 20px;">
+            </td>
+          </tr>
+          
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
